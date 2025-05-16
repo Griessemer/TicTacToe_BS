@@ -65,7 +65,7 @@ if "x" not in st.session_state:
     st.session_state["punkte_computer"] = 0
 
 if not st.session_state["spielgestartet"]:
-    titelbild = Image.open("Titelbild.jpg").resize((220, 320))
+    titelbild = Image.open("Titelbild.jpg").resize((220, 120))
     st.image(titelbild)
     st.title("🎮 Bernds TicTacToe")
     st.markdown("Ein klassisches Spiel gegen den Computer mit Minimax-Logik.")
@@ -82,6 +82,17 @@ img_blank = Image.open("Button.jpg").resize((40, 40))
 
 st.title("🧠 Tic Tac Toe – Spieler vs. Computer")
 st.caption("Du bist **Blaues Shirt**, der Computer ist **Rosa Shirt**.")
+
+st.markdown("""
+<style>
+div.stButton > button {
+    padding: 2px 6px;
+    font-size: 12px;
+    height: 20px;
+    width: 40px;
+}
+</style>
+""", unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
 col1.metric("Deine Punkte", st.session_state["punkte_spieler"])
