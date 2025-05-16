@@ -86,10 +86,10 @@ st.caption("Du bist **Blaues Shirt**, der Computer ist **Rosa Shirt**.")
 st.markdown("""
 <style>
 div.stButton > button {
-    padding: 2px 6px;
-    font-size: 12px;
-    height: 20px;
-    width: 40px;
+    padding: 2px 3px;
+    font-size: 6px;
+    height: 10px;
+    width: 20px;
 }
 </style>
 """, unsafe_allow_html=True)
