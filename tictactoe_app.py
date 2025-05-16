@@ -65,7 +65,7 @@ if "x" not in st.session_state:
     st.session_state["punkte_computer"] = 0
 
 if not st.session_state["spielgestartet"]:
-    titelbild = Image.open("Titelbild.jpg").resize((420, 620))
+    titelbild = Image.open("Titelbild.jpg").resize((220, 320))
     st.image(titelbild)
     st.title("🎮 Bernds TicTacToe")
     st.markdown("Ein klassisches Spiel gegen den Computer mit Minimax-Logik.")
@@ -76,9 +76,9 @@ if not st.session_state["spielgestartet"]:
     st.stop()  # Alles andere wird nicht geladen
 
 # Bilder laden
-img_X = Image.open("Spieler_01.jpg").resize((80, 80))
-img_O = Image.open("Spieler_02.jpg").resize((80, 80))
-img_blank = Image.open("Button.jpg").resize((80, 80))
+img_X = Image.open("Spieler_01.jpg").resize((40, 40))
+img_O = Image.open("Spieler_02.jpg").resize((40, 40))
+img_blank = Image.open("Button.jpg").resize((40, 40))
 
 st.title("🧠 Tic Tac Toe – Spieler vs. Computer")
 st.caption("Du bist **Blaues Shirt**, der Computer ist **Rosa Shirt**.")
